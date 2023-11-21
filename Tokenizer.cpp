@@ -1,4 +1,4 @@
-#include "Tokenizer.hpp"
+#include "Parser.hpp"
 
 namespace parser
 {
@@ -188,10 +188,10 @@ namespace parser
 
     void Tokenizer::EndToken(Token& token, std::vector<Token>& tokens)
     {
-        if (token.m_TokenType == TokenType::COMMENT || token.m_TokenType != TokenType::WHITESPACE)
+        if (token.m_TokenType == TokenType::COMMENT || token.m_TokenType == TokenType::WHITESPACE)
             return;
             
-        if (token.m_TokenType == TokenType::IDENTIFIER && Parser::GetType(token.m_Data).has_value())
+        if (token.m_TokenType == TokenType::IDENTIFIER && Parser::ContainsType(token.m_Data))
             token.m_TokenType = TokenType::TYPE;
 
         if (token.m_TokenType == TokenType::POTENTIAL_DOUBLE)

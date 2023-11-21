@@ -1,7 +1,8 @@
 #pragma once
 
-#include "Parser.hpp"
 #include <iostream>
+#include <string>
+#include <vector>
 
 namespace parser
 {

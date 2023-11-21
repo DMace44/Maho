@@ -1,12 +1,12 @@
 #pragma once
 
-#include "Tokenizer.hpp"
 #include "Type.hpp"
+#include "Tokenizer.hpp"
 #include <optional>
 
 namespace parser
 {
-    std::map<std::string, Type> typeTable{};
+    static std::map<const std::string, Type> typeTable;
 
     class Parser
     {
@@ -18,11 +18,13 @@ namespace parser
         std::optional<Token> ExpectOperator(const std::string& name = std::string());
         std::optional<Token> ExpectIdentifier(const std::string& name = std::string());
     public:
-        Parser();
         void Parse(std::vector<Token>& tokens);
-        static std::optional<Type> GetType(const std::string& name)
+        static bool ContainsType(const std::string& name)
         {
-            return typeTable[name];
+            typeTable["int"] = Type("Integer32", TypeDeclaration::STRUCTURE);
+            typeTable["string"] = Type("String", TypeDeclaration::CLASS);
+            typeTable["Console"] = Type("Console", TypeDeclaration::CLASS);
+            return typeTable.find(name) != typeTable.end();
         }
     };
 }

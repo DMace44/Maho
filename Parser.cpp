@@ -1,5 +1,4 @@
 #include "Parser.hpp"
-#include "Tokenizer.hpp"
 
 namespace parser
 {
@@ -62,12 +61,5 @@ namespace parser
                 }
             }
         }
-    }
-
-    
-    Parser::Parser()
-    {
-        typeTable["int"] = Type("Integer32", TypeDeclaration::STRUCTURE);
-        typeTable["string"] = Type("String", TypeDeclaration::CLASS);
     }
 }
