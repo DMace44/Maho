@@ -1,0 +1,61 @@
+﻿  Maho.cpp
+D:\Development\Compiler\Maho\Tokenizer.hpp(53,42): error C2039: 'vector': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\iostream(19,1): message : see declaration of 'std'
+D:\Development\Compiler\Maho\Tokenizer.hpp(53,42): error C2061: syntax error: identifier 'vector'
+D:\Development\Compiler\Maho\Tokenizer.hpp(56,14): error C2039: 'vector': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\iostream(19,1): message : see declaration of 'std'
+D:\Development\Compiler\Maho\Tokenizer.hpp(56,14): error C7568: argument list missing after assumed function template 'vector'
+D:\Development\Compiler\Maho\Tokenizer.hpp(56,14): error C2062: type 'unknown-type' unexpected
+D:\Development\Compiler\Maho\Tokenizer.hpp(56,66): error C2238: unexpected token(s) preceding ';'
+D:\Development\Compiler\Maho\Maho.cpp(20,29): error C2039: 'Tokenize': is not a member of 'parser::Tokenizer'
+D:\Development\Compiler\Maho\Tokenizer.hpp(50,11): message : see declaration of 'parser::Tokenizer'
+D:\Development\Compiler\Maho\Maho.cpp(22,5): error C3531: 'token': a symbol whose type contains 'auto' must have an initializer
+D:\Development\Compiler\Maho\Maho.cpp(22,21): error C2143: syntax error: missing ';' before ':'
+D:\Development\Compiler\Maho\Maho.cpp(22,23): error C3536: 'tokens': cannot be used before it is initialized
+D:\Development\Compiler\Maho\Maho.cpp(22,29): error C2143: syntax error: missing ';' before ')'
+D:\Development\Compiler\Maho\Maho.cpp(29,11): error C2664: 'void parser::Parser::Parse(std::vector<parser::Token,std::allocator<parser::Token>> &)': cannot convert argument 1 from 'int' to 'std::vector<parser::Token,std::allocator<parser::Token>> &'
+D:\Development\Compiler\Maho\Parser.hpp(22,14): message : see declaration of 'parser::Parser::Parse'
+D:\Development\Compiler\Maho\Maho.cpp(29,11): message : while trying to match the argument list '(int)'
+  Parser.cpp
+D:\Development\Compiler\Maho\Tokenizer.hpp(53,42): error C2039: 'vector': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\iostream(19,1): message : see declaration of 'std'
+D:\Development\Compiler\Maho\Tokenizer.hpp(53,42): error C2061: syntax error: identifier 'vector'
+D:\Development\Compiler\Maho\Tokenizer.hpp(56,14): error C2039: 'vector': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\iostream(19,1): message : see declaration of 'std'
+D:\Development\Compiler\Maho\Tokenizer.hpp(56,14): error C7568: argument list missing after assumed function template 'vector'
+D:\Development\Compiler\Maho\Tokenizer.hpp(56,14): error C2062: type 'unknown-type' unexpected
+D:\Development\Compiler\Maho\Tokenizer.hpp(56,66): error C2238: unexpected token(s) preceding ';'
+  Tokenizer.cpp
+D:\Development\Compiler\Maho\Parser.hpp(14,21): error C2065: 'Token': undeclared identifier
+D:\Development\Compiler\Maho\Parser.hpp(14,14): error C2923: 'std::vector': 'Token' is not a valid template type argument for parameter '_Ty'
+D:\Development\Compiler\Maho\Parser.hpp(14,21): message : see declaration of 'Token'
+D:\Development\Compiler\Maho\Parser.hpp(14,14): error C2976: 'std::vector': too few template arguments
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(438,1): message : see declaration of 'std::vector'
+D:\Development\Compiler\Maho\Parser.hpp(14,29): error C2955: 'std::vector': use of class template requires template argument list
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(438,1): message : see declaration of 'std::vector'
+D:\Development\Compiler\Maho\Parser.hpp(15,21): error C2065: 'Token': undeclared identifier
+D:\Development\Compiler\Maho\Parser.hpp(15,14): error C2923: 'std::vector': 'Token' is not a valid template type argument for parameter '_Ty'
+D:\Development\Compiler\Maho\Parser.hpp(15,21): message : see declaration of 'Token'
+D:\Development\Compiler\Maho\Parser.hpp(15,14): error C2976: 'std::vector': too few template arguments
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(438,1): message : see declaration of 'std::vector'
+D:\Development\Compiler\Maho\Parser.hpp(15,29): error C2955: 'std::vector': use of class template requires template argument list
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(438,1): message : see declaration of 'std::vector'
+D:\Development\Compiler\Maho\Parser.hpp(18,23): error C2065: 'Token': undeclared identifier
+D:\Development\Compiler\Maho\Parser.hpp(18,14): error C2923: 'std::optional': 'Token' is not a valid template type argument for parameter '_Ty'
+D:\Development\Compiler\Maho\Parser.hpp(18,23): message : see declaration of 'Token'
+D:\Development\Compiler\Maho\Parser.hpp(18,30): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\optional(214,1): message : see declaration of 'std::optional'
+D:\Development\Compiler\Maho\Parser.hpp(19,23): error C2065: 'Token': undeclared identifier
+D:\Development\Compiler\Maho\Parser.hpp(19,14): error C2923: 'std::optional': 'Token' is not a valid template type argument for parameter '_Ty'
+D:\Development\Compiler\Maho\Parser.hpp(19,23): message : see declaration of 'Token'
+D:\Development\Compiler\Maho\Parser.hpp(19,30): error C2955: 'std::optional': use of class template requires template argument list
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\optional(214,1): message : see declaration of 'std::optional'
+D:\Development\Compiler\Maho\Parser.hpp(22,32): error C2065: 'Token': undeclared identifier
+D:\Development\Compiler\Maho\Parser.hpp(22,25): error C2923: 'std::vector': 'Token' is not a valid template type argument for parameter '_Ty'
+D:\Development\Compiler\Maho\Parser.hpp(22,32): message : see declaration of 'Token'
+D:\Development\Compiler\Maho\Parser.hpp(22,25): error C2976: 'std::vector': too few template arguments
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(438,1): message : see declaration of 'std::vector'
+D:\Development\Compiler\Maho\Parser.hpp(22,40): error C2955: 'std::vector': use of class template requires template argument list
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\vector(438,1): message : see declaration of 'std::vector'
+D:\Development\Compiler\Maho\Parser.hpp(27,5): warning C4624: 'parser::Parser': destructor was implicitly defined as deleted
+  Generating Code...

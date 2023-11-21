@@ -1,0 +1,8 @@
+using System;
+
+int main()
+{	
+	string str = "Hello, World!\n"; 
+	Console.Print(str); 
+	return 0; 
+}
