@@ -1,5 +1,6 @@
 # Prerequisites
 *.d
+*.sln
 
 # Compiled Object files
 *.slo
@@ -27,7 +28,7 @@
 *.lib
 
 # Executables
-*.exe
+*.elxe
 *.out
 *.app
 *.ilk
