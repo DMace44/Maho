@@ -190,9 +190,6 @@ namespace parser
     {
         if (token.m_TokenType == TokenType::COMMENT || token.m_TokenType == TokenType::WHITESPACE)
             return;
-            
-        if (token.m_TokenType == TokenType::IDENTIFIER && Parser::ContainsType(token.m_Data))
-            token.m_TokenType = TokenType::TYPE;
 
         if (token.m_TokenType == TokenType::POTENTIAL_DOUBLE)
         {

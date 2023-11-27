@@ -10,7 +10,6 @@ namespace parser
     {
         WHITESPACE,
         IDENTIFIER,
-        TYPE,
         INTEGER_LITERAL,
         STRING_LITERAL,
         POTENTIAL_DOUBLE,
@@ -24,7 +23,6 @@ namespace parser
     static const char* tokenTypeStrings[] = {
         "WHITESPACE",
         "IDENTIFIER",
-        "TYPE",
         "INTEGER_LITERAL",
         "STRING_LITERAL",
         "POTENTIAL_DOUBLE",
@@ -45,7 +43,6 @@ namespace parser
 
     public:
         void DebugPrint();
-        Token() = default;
     };
 
     class Tokenizer

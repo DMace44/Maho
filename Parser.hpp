@@ -21,9 +21,6 @@ namespace parser
         void Parse(std::vector<Token>& tokens);
         static bool ContainsType(const std::string& name)
         {
-            typeTable["int"] = Type("Integer32", TypeDeclaration::STRUCTURE);
-            typeTable["string"] = Type("String", TypeDeclaration::CLASS);
-            typeTable["Console"] = Type("Console", TypeDeclaration::CLASS);
             return typeTable.find(name) != typeTable.end();
         }
     };
